@@ -1,0 +1,56 @@
+body {
+background: #333;
+color: white;
+}
+
+.thumb {
+  height: 200px;
+  max-width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: top;
+}
+
+table {
+margin-left: auto;
+margin-right: auto;
+}
+
+h1.logo {
+  color: white;
+  font-size: 45px;
+  padding: 100px 0 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0.3em;
+  background: transparent url(/logo.png) 50% 0 no-repeat;
+}
+
+.button {
+  background:#999;
+  border: 2px solid;
+  cursor: pointer;
+  color: #fff;
+  width: 150px;
+  margin-left:4px;
+}
+
+.center {
+  text-align: center;
+}
+
+.comment {
+  padding: 50px 0 0;
+}
+
+.comments {
+  padding: 30px 0 0;
+  font-size: 20px;
+}
+
+.footer {
+  font-size: 30px;
+  color: white;
+}

@@ -1,0 +1,11 @@
+%table
+  - @pictures.each_slice(3) do |five_pics|
+    %tr
+      - five_pics.each do |pic|
+        %td{:width => "300px", :align => "center"}
+          = haml :picture_attriburtes, :locals => { :pic => pic}
+
+%form{:action => "/upload", :method => "post", :enctype => "multipart/form-data", :class => "center"}
+  %input{:type => "file", :name => "file"}
+  %input.button{:type => "submit", :value => "Upload"}
+  

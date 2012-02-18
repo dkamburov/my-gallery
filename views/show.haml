@@ -1,0 +1,12 @@
+%img{:src => @current.file.url}
+%form{:action => "/#{@current.id}", :method => "POST", :class => "comment"}
+  %input{:type => "text", :name => "comment[author]", :value => "Name", :maxlength => "10"}
+  %br
+  %textarea{:name => "comment[content]", :cols => "40", :rows => "5"}
+    Leave your comment here.
+  %br
+  %input.button{:type => "submit", :value => "Comment!"}
+  
+%ul.comments
+  -@current.comments.each do |c|
+    %li #{c.author} said: "#{c.content}"
